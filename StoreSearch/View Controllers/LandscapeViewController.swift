@@ -23,6 +23,10 @@ class LandscapeViewController: UIViewController {
           completion: nil)
     }
     
+    @objc func buttonPressed(_ sender: UIButton) {
+     performSegue(withIdentifier: "ShowDetail", sender: sender)
+   }
+    
     override func viewDidLoad() {
         view.removeConstraints(view.constraints)
         view.translatesAutoresizingMaskIntoConstraints = true
@@ -48,13 +52,24 @@ class LandscapeViewController: UIViewController {
               case .notSearchedYet:
                 break
               case .loading:
-                break
+                showSpinner()
               case .noResults:
-                break
+                showNothingFoundLabel()
               case .results(let list):
                 tileButtons(list)
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue,
+                             sender: Any?) {
+      if segue.identifier == "ShowDetail" {
+        if case .results(let list) = search.state {
+          let detailViewController = segue.destination as! DetailViewController
+          let searchResult = list[(sender as! UIButton).tag - 2000]
+          detailViewController.searchResult = searchResult
+        }
+      }
     }
     
     private func tileButtons(_ searchResults: [SearchResult]) {
@@ -99,9 +114,12 @@ class LandscapeViewController: UIViewController {
         for (index, result) in searchResults.enumerated() {
           let button = UIButton(type: .custom)
           button.setBackgroundImage(UIImage(named: "LandscapeButton"), for: .normal)
+          button.tag = 2000 + index
+          button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
           downloadImage(for: result, andPlaceOn: button)
           button.setTitle("\(index)", for: .normal)
           button.frame = CGRect(x: x + paddingHorz, y: marginY + CGFloat(row)*itemHeight + paddingVert, width: buttonWidth, height: buttonHeight)
+         
           scrollView.addSubview(button)
           row += 1
           if row == rowsPerPage {
@@ -146,7 +164,46 @@ class LandscapeViewController: UIViewController {
       }
     }
     
+    private func showSpinner() {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.center = CGPoint(x: scrollView.bounds.midX + 0.5, y: scrollView.bounds.midY + 0.5)
+        spinner.tag = 1000
+        view.addSubview(spinner)
+        spinner.startAnimating()
+    }
     
+    func searchResultsReceived() {
+      hideSpinner()
+      switch search.state {
+      case .notSearchedYet, .loading:
+        break
+      case .noResults:
+        showNothingFoundLabel()
+      case .results(let list):
+        tileButtons(list)
+      }
+    }
+    
+    private func hideSpinner() {
+      view.viewWithTag(1000)?.removeFromSuperview()
+    }
+    
+    private func showNothingFoundLabel() {
+        let label = UILabel(frame: CGRect.zero)
+        label.text = "Nothing Found"
+        label.textColor = UIColor.white
+        label.backgroundColor = UIColor.clear
+        
+        label.sizeToFit()
+        
+        var rect = label.frame
+        rect.size.width = ceil(rect.size.width/2) * 2
+        rect.size.height = ceil(rect.size.height/2) * 2
+        label.frame = rect
+        
+        label.center = CGPoint(x: scrollView.bounds.midX, y: scrollView.bounds.midY)
+        view.addSubview(label)
+    }
 }
 
 extension LandscapeViewController: UIScrollViewDelegate {
