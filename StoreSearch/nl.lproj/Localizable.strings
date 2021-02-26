@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  StoreSearch
+
+  Created by Matthew Wolf on 2/24/21.
+  Copyright © 2021 Matthew Wolf. All rights reserved.
+*/
+
+"ARTIST_NAME_LABEL_FORMAT" = "%2$@ van %1$@";
+/* Localized kind: Album */
+"Album" = "Album";
+/* Localized kind: Software */
+"App" = "App";
+/* Localized kind: Audio Book */
+"Audio Book" = "Audioboek";
+/* Localized kind: Book */
+"Book" = "Boek";
+/* Localized kind: E-Book */
+"E-Book" = "E-Boek";
+/* Localized kind: Feature Movie */
+"Movie" = "Flim";
+/* Localized kind: Music Video */
+"Music Video" = "Videoclip";
+/* Localized kind: Podcast */
+"Podcast" = "Podcast";
+/* Localized kind: Song */
+"Song" = "Liedje";
+/* Localized kind: TV Episode */
+"TV Episode" = "TV Episode";
+
+"Nothing Found" = "Niets gevonden";
+
+"There was an error accessing the iTunes Store. Please try again." = "Er ging iets fout bij het communiceren met de iTunes winkel. Probeer het nog eens.";
+
+"Unknown" = "Onbekend";
+
+"Whoops..." = "Foutje...";

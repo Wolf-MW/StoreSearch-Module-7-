@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF0CA16525DF13C900FF160A /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0CA16425DF13C900FF160A /* LoadingCell.xib */; };
+		FF04626225E717DD00DC8749 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF04626425E717DD00DC8749 /* NothingFoundCell.xib */; };
+		FF04626825E71A4D00DC8749 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF04626A25E71A4D00DC8749 /* LoadingCell.xib */; };
+		FF04627225E71B9A00DC8749 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF04627425E71B9A00DC8749 /* SearchResultCell.xib */; };
+		FF04627925E71DCD00DC8749 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF04627B25E71DCD00DC8749 /* Localizable.strings */; };
 		FF0CA16725DF355800FF160A /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CA16625DF355800FF160A /* UIImageView+DownloadImage.swift */; };
+		FF2DA9D025E994950033AA26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF2DA9D225E994950033AA26 /* InfoPlist.strings */; };
 		FFA467F425E451D200A1A0A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA467F325E451D200A1A0A9 /* DetailViewController.swift */; };
 		FFA467F725E4576100A1A0A9 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA467F625E4576100A1A0A9 /* DimmingPresentationController.swift */; };
 		FFA467FB25E46BF700A1A0A9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA467FA25E46BF700A1A0A9 /* GradientView.swift */; };
@@ -16,9 +20,7 @@
 		FFA4680425E472EE00A1A0A9 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4680325E472EE00A1A0A9 /* SlideOutAnimationController.swift */; };
 		FFA4680825E474F700A1A0A9 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4680725E474F700A1A0A9 /* LandscapeViewController.swift */; };
 		FFA5743325DDA8FA00F557D6 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5743225DDA8FA00F557D6 /* SearchResult.swift */; };
-		FFA5743525DDBBFB00F557D6 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA5743425DDBBFB00F557D6 /* SearchResultCell.xib */; };
 		FFA5743725DDC09200F557D6 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5743625DDC09200F557D6 /* SearchResultCell.swift */; };
-		FFA5743925DDC37600F557D6 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA5743825DDC37600F557D6 /* NothingFoundCell.xib */; };
 		FFCAB9D125E5A3D800CE5870 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCAB9D025E5A3D800CE5870 /* FadeOutAnimationController.swift */; };
 		FFCAB9D525E5C82400CE5870 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCAB9D425E5C82300CE5870 /* Search.swift */; };
 		FFF751AB25DC828A006B1DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF751AA25DC828A006B1DF2 /* AppDelegate.swift */; };
@@ -29,8 +31,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF0CA16425DF13C900FF160A /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		FF04626325E717DD00DC8749 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		FF04626625E7188C00DC8749 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		FF04626925E71A4D00DC8749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
+		FF04626D25E71A7A00DC8749 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
+		FF04627025E71AD100DC8749 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		FF04627325E71B9A00DC8749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
+		FF04627A25E71DCD00DC8749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF04627D25E72B2300DC8749 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF0CA16625DF355800FF160A /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		FF2DA9D125E994950033AA26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF2DA9D425E994990033AA26 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFA467F325E451D200A1A0A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FFA467F625E4576100A1A0A9 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		FFA467FA25E46BF700A1A0A9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -38,9 +49,7 @@
 		FFA4680325E472EE00A1A0A9 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		FFA4680725E474F700A1A0A9 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		FFA5743225DDA8FA00F557D6 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		FFA5743425DDBBFB00F557D6 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		FFA5743625DDC09200F557D6 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		FFA5743825DDC37600F557D6 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		FFCAB9D025E5A3D800CE5870 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 		FFCAB9D425E5C82300CE5870 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		FFF751A725DC828A006B1DF2 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,13 +120,15 @@
 				FFF751B325DC828C006B1DF2 /* Assets.xcassets */,
 				FFF751B825DC828C006B1DF2 /* Info.plist */,
 				FFA5743225DDA8FA00F557D6 /* SearchResult.swift */,
-				FFA5743425DDBBFB00F557D6 /* SearchResultCell.xib */,
+				FF04627425E71B9A00DC8749 /* SearchResultCell.xib */,
 				FFA5743625DDC09200F557D6 /* SearchResultCell.swift */,
-				FFA5743825DDC37600F557D6 /* NothingFoundCell.xib */,
-				FF0CA16425DF13C900FF160A /* LoadingCell.xib */,
+				FF04626425E717DD00DC8749 /* NothingFoundCell.xib */,
+				FF04626A25E71A4D00DC8749 /* LoadingCell.xib */,
 				FF0CA16625DF355800FF160A /* UIImageView+DownloadImage.swift */,
 				FFA467FA25E46BF700A1A0A9 /* GradientView.swift */,
 				FFCAB9D425E5C82300CE5870 /* Search.swift */,
+				FF04627B25E71DCD00DC8749 /* Localizable.strings */,
+				FF2DA9D225E994950033AA26 /* InfoPlist.strings */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = FFF7519E25DC828A006B1DF2;
 			productRefGroup = FFF751A825DC828A006B1DF2 /* Products */;
@@ -181,9 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF751B425DC828C006B1DF2 /* Assets.xcassets in Resources */,
-				FF0CA16525DF13C900FF160A /* LoadingCell.xib in Resources */,
-				FFA5743525DDBBFB00F557D6 /* SearchResultCell.xib in Resources */,
-				FFA5743925DDC37600F557D6 /* NothingFoundCell.xib in Resources */,
+				FF2DA9D025E994950033AA26 /* InfoPlist.strings in Resources */,
+				FF04627925E71DCD00DC8749 /* Localizable.strings in Resources */,
+				FF04626825E71A4D00DC8749 /* LoadingCell.xib in Resources */,
+				FF04627225E71B9A00DC8749 /* SearchResultCell.xib in Resources */,
+				FF04626225E717DD00DC8749 /* NothingFoundCell.xib in Resources */,
 				FFF751B225DC828A006B1DF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,10 +229,55 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FF04626425E717DD00DC8749 /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF04626325E717DD00DC8749 /* en */,
+				FF04626625E7188C00DC8749 /* nl */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		FF04626A25E71A4D00DC8749 /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF04626925E71A4D00DC8749 /* Base */,
+				FF04626D25E71A7A00DC8749 /* nl */,
+			);
+			name = LoadingCell.xib;
+			sourceTree = "<group>";
+		};
+		FF04627425E71B9A00DC8749 /* SearchResultCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF04627325E71B9A00DC8749 /* Base */,
+			);
+			name = SearchResultCell.xib;
+			sourceTree = "<group>";
+		};
+		FF04627B25E71DCD00DC8749 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF04627A25E71DCD00DC8749 /* en */,
+				FF04627D25E72B2300DC8749 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FF2DA9D225E994950033AA26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF2DA9D125E994950033AA26 /* en */,
+				FF2DA9D425E994990033AA26 /* nl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		FFF751B025DC828A006B1DF2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FFF751B125DC828A006B1DF2 /* Base */,
+				FF04627025E71AD100DC8749 /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -230,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -290,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
